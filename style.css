@@ -1,0 +1,133 @@
+
+body {
+
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    margin: 0;    padding:0;
+    font-family: 'Orbitron', sans-serif;
+    user-select:none;
+
+}
+
+
+
+.cargando{
+
+    display:block;
+    margin-top:60%;  margin-left:38%;
+    
+}
+
+
+
+#cont{   
+
+
+    display:block ; 
+    color:white;
+    position:fixed ;
+
+
+    background-color: #e0a899; /*COLOR DEL FONDO*/
+
+
+    height:100%; width:100%;
+    transition-delay:.1s;
+}
+
+
+.cargando span {   
+
+
+    display:inline-block;
+    height:55px;  width:8px;
+
+
+    background-color:#fff; color /*blanco de las letras*/
+
+
+    margin:1px;
+    transform:scaleY(1);
+    animation:cargar 2s ease-in-out infinite;
+}
+
+
+
+
+
+.cargando span:nth-child(2){
+    animation-delay:.09s;
+    background-color: #f9f4f4;  /*COLORES DE LAS BARRAS EN MOVIMIENTO*/
+
+
+}
+
+.cargando span:nth-child(3){
+    animation-delay:.18s;
+    background-color: #f0e4e4 ;
+}
+
+.cargando span:nth-child(4){
+    animation-delay:.27s;
+    background-color: #e7d3d3;
+}
+
+
+.cargando span:nth-child(5){
+    animation-delay:.36s;
+    background-color: #f0e4e4;
+}
+
+.cargando span:nth-child(6){
+    animation-delay:.45s;
+    background-color: #f9f4f4;
+
+}
+
+.cargando span:nth-child(7){
+    animation-delay:.54s;
+    background-color:#fff;
+    
+}
+
+
+
+
+
+
+
+@keyframes cargar
+{
+    0%
+    {
+        transform:scale(1);
+    }
+    25%
+    {
+        transform:scale(1,2.5);
+    }
+    50%
+    {
+        transform:scaleY(1);
+    }
+}
+
+
+
+
+
+
+@media only screen and ( min-width:500px ){
+
+  .cargando
+
+
+  {  
+    margin-top:20%;  margin-left:41%;
+
+  }  
+
+}
